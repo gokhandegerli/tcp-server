@@ -1,0 +1,23 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Compiled files
+*.class
+target/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
