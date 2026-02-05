@@ -1,9 +1,11 @@
-import java.io.*;
 import java.nio.charset.StandardCharsets;
 
 public class ByteVsChar {
-  public static void main(String[] args) throws IOException {
-    String text = "Merhaba çağ!";
+  public static void main(String[] args) {
+    String text = "Merhaba çağ!🚀";
+
+    int codePoint = 128640;
+    String rocket = Character.toString(codePoint);
 
     // 1. String → Byte
     byte[] bytes = text.getBytes(StandardCharsets.UTF_8);
@@ -27,5 +29,6 @@ public class ByteVsChar {
     System.out.println("Char sayısı: " + decoded.length());
     System.out.println("Orijinal: " + text);
     System.out.println("Decoded:  " + decoded);
+    System.out.println(codePoint + "=> " + rocket); // Çıktı: 🚀
   }
 }
