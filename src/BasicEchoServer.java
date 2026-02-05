@@ -100,7 +100,7 @@ import java.net.Socket;
  *   </tr>
  * </table>
  *
- * @author [Senin Adın]
+ * @author Gokhan D.
  * @version 1.0
  * @since 2026-02-04
  */
@@ -112,7 +112,8 @@ public class BasicEchoServer {
    * <p><b>Port Numarası Seçimi:</b>
    * <ul>
    *   <li>0-1023: System ports (root gerektirir) - HTTP:80, HTTPS:443</li>
-   *   <li>1024-49151: Registered ports (bazıları kullanımda) - MySQL:3306, PostgreSQL:5432</li>
+   *   <li>1024-49151: Registered ports (bazıları kullanımda) - MySQL:3306,
+   *   PostgreSQL:5432</li>
    *   <li>49152-65535: Dynamic ports (güvenli) - Geçici bağlantılar için</li>
    *   <li>8001: Development için yaygın (8080, 8000 gibi)</li>
    * </ul>
@@ -142,7 +143,7 @@ public class BasicEchoServer {
    *
    * @param args Komut satırı argümanları (kullanılmıyor)
    */
-  public static void main(String[] args) {
+  static void main(String[] args) {
 
     System.out.println("Single Client, Single Message");
     System.out.println("Starting TCP Server on port: " + PORT + "...\n");
