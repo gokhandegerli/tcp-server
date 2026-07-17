@@ -13,6 +13,7 @@ public class FunctionalInterface {
     System.out.println("Hello World");
 
     Runnable runnable = FunctionalInterface::doWork;
+    /*    Runnable runnable2 = () -> doWork();*/
     runnable.run();
     System.out.println("---------------------------------------");
 
@@ -23,10 +24,9 @@ public class FunctionalInterface {
     System.out.println("---------------------------------------");
 
     Function<Integer, Integer> function = n -> n * n;
-    Integer apply = function.apply(number);
-    System.out.println("Number: " + number + ", Square result: " + apply);
+    Integer functionResult = function.apply(number);
+    System.out.println("Number: " + number + ", Square result: " + functionResult);
     System.out.println("---------------------------------------");
-
 
     Consumer<String> consumer = s -> System.out.println("Consumer accepted: " + s);
     consumer.accept("This is a test");
